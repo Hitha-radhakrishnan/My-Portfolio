@@ -1,0 +1,63 @@
+
+.experience-container {
+    display: flex;
+    gap: 60px;
+    align-items:start;
+    padding: 20px;
+  }
+  
+ .exp-head{
+    display: flex;
+    height: 100%;
+    
+ }
+  .experience-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .experience-item {
+    background-color: #fff9e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .experience-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .experience-item p:first-child {
+    font-weight: bold;
+    color: #444;
+  }
+  @media (max-width: 768px) {
+    .experience-container {
+      flex-direction: column; 
+      gap: 20px;
+    }
+  
+    .exp-head {
+      justify-content: center; 
+      margin-bottom: 20px; 
+    }
+  
+    h2 {
+      text-align: center; 
+      font-size: 1.5rem;
+    }
+  }
