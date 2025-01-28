@@ -2,6 +2,9 @@ import React from 'react';
 import './Project.css';
 import contactmanager from '../../assets/ContactManager.png'
 import ecommerce from '../../assets/E-commerce.png'
+import traveljournal from '../../assets/traveljounal.png'
+import dashboard from '../../assets/dashboard.png'
+import youtube from '../../assets/youtube.png'
 const projects = [
   {
     title: "Contact Manager Application",
@@ -17,13 +20,37 @@ const projects = [
     link:"https://e-commerce-web07.netlify.app/",
     image:ecommerce,
     tools:["React","CSS","JavaScript","MongoDB","NodeJS","Express"],
+  },
+
+  {
+    title:"Travel Journal ",
+    description:"Developed a Travel Journal App with Node.js and Express.js, utilizing RESTful APIs and MongoDB for efficient trip management, user memory storage, and secure CRUD operations.",
+    link:"https://traveljournal-xq5j.onrender.com/",
+    image:traveljournal,
+    tools:["React","CSS","JavaScript","MongoDB","NodeJS","Express"],
+  },
+
+  {
+    title:"React Dashboard",
+    description:"A dynamic and user-friendly dashboard built with React, showcasing interactive charts and graphs for data analysis and business insights.",
+    link:"https://erp-dashboard99.netlify.app/",
+    image:dashboard,
+    tools:["React","CSS","JavaScript"],
+  },
+
+  {
+    title:"Frontend Development Project: YouTube Clone",
+    description:"A hands-on project that explores the development of a video sharing platform, highlighting my skills in frontend development and user interface design.",
+    link:"https://strong-moxie-7baac8.netlify.app/",
+    image:youtube,
+    tools:["React","CSS","JavaScript"],
   }
 ];
 
 const Project = () => {
   return (
     <section className="projects-section">
-      <h2>Check out my latest work</h2>
+      <h2>Check out my latest works</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
